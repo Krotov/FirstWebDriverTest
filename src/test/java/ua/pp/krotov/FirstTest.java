@@ -48,7 +48,7 @@ public class FirstTest {
 	
 	@AfterClass
 	public void tearDown() {
-		// Closes all browser windows and safely ends the session
+		// Close all browser windows and safely end the session
 		driver.quit();
 	}
 
