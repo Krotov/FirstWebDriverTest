@@ -12,13 +12,13 @@ public class FirstTest {
 	
 	private WebDriver driver;
 	
-	@BeforeClass
+	@BeforeClass // Run this method before the first test method in the current class is invoked
 	public void setUp() {
 		// Create a new instance of the Firefox driver
 		driver = new FirefoxDriver();
 	}
 	
-	@Test
+	@Test // Mark this method as part of the test
 	public void gotoSeleniumWikiPage() {
 		// Go to the Wikipedia home page
 		driver.get("https://en.wikipedia.org/");
@@ -32,7 +32,7 @@ public class FirstTest {
 		Assert.assertEquals(header, "Selenium");
 	}
 	
-	@Test
+	@Test // Mark this method as part of the test
 	public void gotoSeleniumWikiPageFailure() {
 		// Go to the Wikipedia home page
 		driver.get("https://en.wikipedia.org/");
@@ -46,7 +46,7 @@ public class FirstTest {
 		Assert.assertEquals(header, "Selenium WebDriver");
 	}
 	
-	@AfterClass
+	@AfterClass // Run this method after all the test methods in the current class have been run
 	public void tearDown() {
 		// Close all browser windows and safely end the session
 		driver.quit();
