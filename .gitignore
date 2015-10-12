@@ -1,6 +1,6 @@
 .classpath
 .project
 .settings/
-test-output
+test-output/
 log/
 target/

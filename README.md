@@ -5,5 +5,6 @@
 
 #### Create new maven project
 ```
-mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=ua.pp.krotov -DartifactId=FirstWebDriverTest -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes
+-DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=ua.pp.krotov -DartifactId=FirstWebDriverTest  -DinteractiveMode=false
 ```
